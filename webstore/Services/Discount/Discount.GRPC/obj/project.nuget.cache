@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8MEnzqMKm7k83uFzMyygJ+MuVdhXtPyY2qslImH1oHG/62tPjhuFuhsy/GESCvng3C6HjzjkpMq8yylTBfCTKA==",
+  "dgSpecHash": "a11/3CSgd3G0zmoQS/e8ha75E1CPcbBtTeFgwngj2MepdZ/LLU8HljY2dbaJNt7iMpeM9GT07pABuVwZrE+nWQ==",
   "success": true,
-  "projectFilePath": "/home/dara/Desktop/webstore/Services/Discount/Discount.GRPC/Discount.GRPC.csproj",
+  "projectFilePath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Discount/Discount.GRPC/Discount.GRPC.csproj",
   "expectedPackageFiles": [
     "/home/dara/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/dara/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -29,8 +29,7 @@
     "/home/dara/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
     "/home/dara/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "/home/dara/.nuget/packages/npgsql/7.0.6/npgsql.7.0.6.nupkg.sha512",
-    "/home/dara/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
-    "/home/dara/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "/home/dara/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }

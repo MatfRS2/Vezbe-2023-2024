@@ -1,33 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/home/dara/Desktop/webstore/Services/Discount/Discount.API/Discount.API.csproj": {}
+    "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Discount/Discount.API/Discount.API.csproj": {}
   },
   "projects": {
-    "/home/dara/Desktop/webstore/Services/Discount/Discount.API/Discount.API.csproj": {
+    "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Discount/Discount.API/Discount.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/dara/Desktop/webstore/Services/Discount/Discount.API/Discount.API.csproj",
+        "projectUniqueName": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Discount/Discount.API/Discount.API.csproj",
         "projectName": "Discount.API",
-        "projectPath": "/home/dara/Desktop/webstore/Services/Discount/Discount.API/Discount.API.csproj",
+        "projectPath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Discount/Discount.API/Discount.API.csproj",
         "packagesPath": "/home/dara/.nuget/packages/",
-        "outputPath": "/home/dara/Desktop/webstore/Services/Discount/Discount.API/obj/",
+        "outputPath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Discount/Discount.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/dara/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/dara/Desktop/webstore/Services/Discount/Discount.Common/Discount.Common.csproj": {
-                "projectPath": "/home/dara/Desktop/webstore/Services/Discount/Discount.Common/Discount.Common.csproj"
+              "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Discount/Discount.Common/Discount.Common.csproj": {
+                "projectPath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Discount/Discount.Common/Discount.Common.csproj"
               }
             }
           }
@@ -39,8 +39,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -53,7 +53,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -65,31 +66,31 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.125/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/dara/Desktop/webstore/Services/Discount/Discount.Common/Discount.Common.csproj": {
+    "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Discount/Discount.Common/Discount.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/dara/Desktop/webstore/Services/Discount/Discount.Common/Discount.Common.csproj",
+        "projectUniqueName": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Discount/Discount.Common/Discount.Common.csproj",
         "projectName": "Discount.Common",
-        "projectPath": "/home/dara/Desktop/webstore/Services/Discount/Discount.Common/Discount.Common.csproj",
+        "projectPath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Discount/Discount.Common/Discount.Common.csproj",
         "packagesPath": "/home/dara/.nuget/packages/",
-        "outputPath": "/home/dara/Desktop/webstore/Services/Discount/Discount.Common/obj/",
+        "outputPath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Discount/Discount.Common/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/dara/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -100,8 +101,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -138,7 +139,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -147,7 +149,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.125/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/pyb73w0r3MuuDlfajhTSvtnCLoaLOO9jaDrvuK7zXwsNcciV/BmpM6k0rV9F+zcsib7J5KdEns7xvH9h26g+Q==",
+  "dgSpecHash": "ux72qG9zRALuyJpAmGPWQ49pAVPuyvKBiGK6xM70b3efU37L2eqD7jKt7+xUbBkGguSnAJDdKSIfAxnzxxWUgQ==",
   "success": true,
-  "projectFilePath": "/home/dara/Desktop/webstore/Services/Discount/Discount.API/Discount.API.csproj",
+  "projectFilePath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Discount/Discount.API/Discount.API.csproj",
   "expectedPackageFiles": [
     "/home/dara/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/dara/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -21,8 +21,7 @@
     "/home/dara/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "/home/dara/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/home/dara/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "/home/dara/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
-    "/home/dara/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "/home/dara/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
   ],
   "logs": []
 }

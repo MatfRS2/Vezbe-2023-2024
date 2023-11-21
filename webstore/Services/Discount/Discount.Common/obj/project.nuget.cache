@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zBv3ohsLGFuqnEnzZoioN/7+fbzHJexhqF0+04PC0JJ8p5sczNzWIj8m8COG6YLmwOiH5w63VcDJ07BFAEwpYw==",
+  "dgSpecHash": "hRnHSp4ff1vtj8X+nM6VxZvn8308Iko0mbKUGBvqRztOvkwR1k0svED/knb47C3iOZSv22ytnDeqR6l8g959+w==",
   "success": true,
-  "projectFilePath": "/home/dara/Desktop/webstore/Services/Discount/Discount.Common/Discount.Common.csproj",
+  "projectFilePath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Discount/Discount.Common/Discount.Common.csproj",
   "expectedPackageFiles": [
     "/home/dara/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/dara/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -15,8 +15,7 @@
     "/home/dara/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "/home/dara/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
     "/home/dara/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "/home/dara/.nuget/packages/npgsql/7.0.6/npgsql.7.0.6.nupkg.sha512",
-    "/home/dara/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "/home/dara/.nuget/packages/npgsql/7.0.6/npgsql.7.0.6.nupkg.sha512"
   ],
   "logs": []
 }

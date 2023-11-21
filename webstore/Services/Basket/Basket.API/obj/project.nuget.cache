@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rnuAnQ0VOMxqQEz5Tefx2vPNBdgOeuvLB6+KXcXvEMYoSn97iS3H0wSTMTqSoTb9S5GsHNRRcVxXYaRPgrrTpQ==",
+  "dgSpecHash": "2UB7BoasHjScyZcl5Dyo8hRFejPUv+x/PdMSHY6Ppi/7/OTWN8uJ3cZU6nL3kv2JaHI2VhMhCV3558A0jrKDAw==",
   "success": true,
-  "projectFilePath": "/home/dara/Desktop/webstore/Services/Basket/Basket.API/Basket.API.csproj",
+  "projectFilePath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Basket/Basket.API/Basket.API.csproj",
   "expectedPackageFiles": [
     "/home/dara/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/dara/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0-rc.2.23479.6/microsoft.extensions.caching.abstractions.8.0.0-rc.2.23479.6.nupkg.sha512",
@@ -19,8 +19,7 @@
     "/home/dara/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/home/dara/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "/home/dara/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
-    "/home/dara/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512",
-    "/home/dara/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "/home/dara/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512"
   ],
   "logs": []
 }

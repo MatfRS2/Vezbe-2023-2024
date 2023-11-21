@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/home/dara/Desktop/webstore/Services/Basket/Basket.API/Basket.API.csproj": {}
+    "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Basket/Basket.API/Basket.API.csproj": {}
   },
   "projects": {
-    "/home/dara/Desktop/webstore/Services/Basket/Basket.API/Basket.API.csproj": {
+    "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Basket/Basket.API/Basket.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/dara/Desktop/webstore/Services/Basket/Basket.API/Basket.API.csproj",
+        "projectUniqueName": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Basket/Basket.API/Basket.API.csproj",
         "projectName": "Basket.API",
-        "projectPath": "/home/dara/Desktop/webstore/Services/Basket/Basket.API/Basket.API.csproj",
+        "projectPath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Basket/Basket.API/Basket.API.csproj",
         "packagesPath": "/home/dara/.nuget/packages/",
-        "outputPath": "/home/dara/Desktop/webstore/Services/Basket/Basket.API/obj/",
+        "outputPath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Basket/Basket.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/dara/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +35,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.Extensions.Caching.StackExchangeRedis": {
               "target": "Package",
@@ -57,7 +57,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -69,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.125/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
         }
       }
     }
