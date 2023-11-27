@@ -17,14 +17,14 @@
           "/home/dara/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +35,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -48,7 +48,7 @@
             },
             "Dapper": {
               "target": "Package",
-              "version": "[2.1.21, )"
+              "version": "[2.1.24, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -64,7 +64,7 @@
             },
             "Npgsql": {
               "target": "Package",
-              "version": "[7.0.6, )"
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
