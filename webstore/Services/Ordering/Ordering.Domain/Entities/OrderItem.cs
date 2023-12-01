@@ -5,6 +5,12 @@ namespace Ordering.Domain.Entities;
 
 public class OrderItem: EntityBase
 {
+    public string ProductName { get; set; }
+    public string ProductId { get; set; }
+    public string PictureUrl { get; set; }
+    public decimal Price { get; set; }
+    public int Units { get; private set; } = 0;
+    
     public OrderItem(string productName, string productId, string pictureUrl, decimal price, int units)
     {
         ProductName = productName ?? throw new ArgumentNullException(nameof(productName));
@@ -19,7 +25,7 @@ public class OrderItem: EntityBase
         var newUnits = Units + units;
         if (newUnits <= 0)
         {
-            throw new OrderingDomainException("Invlid number of new units for order item"); //domenski ekseption
+            throw new OrderingDomainException("Invalid number of new units for order item"); 
         }
 
         Units = newUnits;
@@ -29,9 +35,5 @@ public class OrderItem: EntityBase
     {
         return Units * Price;
     }
-    public string ProductName { get; set; }
-    public string ProductId { get; set; }
-    public string PictureUrl { get; set; }
-    public decimal Price { get; set; }
-    public int Units { get; private set; } = 0;
+    
 }
