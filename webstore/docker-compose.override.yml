@@ -79,3 +79,14 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "DatabaseSettings:ConnectionString=Server=discountdb;Port=5432;Database=DiscountDb;User Id=admin;Password=admin1234;"
+  
+  orderdb:
+    container_name: orderdb
+    restart: always
+    ports:
+      - "1433:1433"
+    environment:
+      - SA_PASSWORD=MATF12345678rs2
+      - ACCEPT_EULA=Y
+    volumes:
+      - mssql_data:/var/opt/mssql/data

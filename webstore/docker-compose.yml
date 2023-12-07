@@ -36,7 +36,11 @@
       context: .
       dockerfile: Services/Discount/Discount.GRPC/Dockerfile
 
+  orderdb:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    
 volumes: 
   mongo_data:
   postgres_data:
   pgadmin_data:
+  mssql_data:
