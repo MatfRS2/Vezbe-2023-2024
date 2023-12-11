@@ -1,4 +1,6 @@
+using System.Reflection;
 using Basket.API.Repositories;
+using MassTransit;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +21,15 @@ builder.Services.AddStackExchangeRedisCache(
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+// EventBus
+builder.Services.AddMassTransit(config =>
+{
+    config.UsingRabbitMq((_, cfg) =>
+    {
+        cfg.Host(builder.Configuration["EventBusSettings:HostAddress"]);
+    });
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

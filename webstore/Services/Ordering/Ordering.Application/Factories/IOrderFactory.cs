@@ -1,4 +1,4 @@
-using Ordering.Application.Features.Orders.Command.CreateOrder;
+using Ordering.Application.Features.Orders.Commands.CreateOrder;
 using Ordering.Domain.Aggregates;
 
 namespace Ordering.Application.Factories;

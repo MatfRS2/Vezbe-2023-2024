@@ -1,0 +1,2 @@
+obj/Debug/net8.0/Protos/Coupon.cs \
+obj/Debug/net8.0/Protos/CouponGrpc.cs: Protos/coupon.proto

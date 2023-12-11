@@ -26,6 +26,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Infrastructure", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.API", "Services\Ordering\Ordering.API\Ordering.API.csproj", "{68A4D320-3E47-4C4E-B8A4-A59FD4F0AF28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Messages", "Common\EventBus.Messages\EventBus.Messages.csproj", "{4A188253-5D40-49D7-B199-5CEFFF31DE12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "Security\IdentityServer\IdentityServer.csproj", "{D3D6EB1C-8C3F-4A48-BA8F-67D1EE02382C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +76,13 @@ Global
 		{68A4D320-3E47-4C4E-B8A4-A59FD4F0AF28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68A4D320-3E47-4C4E-B8A4-A59FD4F0AF28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68A4D320-3E47-4C4E-B8A4-A59FD4F0AF28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A188253-5D40-49D7-B199-5CEFFF31DE12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A188253-5D40-49D7-B199-5CEFFF31DE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A188253-5D40-49D7-B199-5CEFFF31DE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A188253-5D40-49D7-B199-5CEFFF31DE12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3D6EB1C-8C3F-4A48-BA8F-67D1EE02382C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D6EB1C-8C3F-4A48-BA8F-67D1EE02382C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D6EB1C-8C3F-4A48-BA8F-67D1EE02382C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D6EB1C-8C3F-4A48-BA8F-67D1EE02382C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

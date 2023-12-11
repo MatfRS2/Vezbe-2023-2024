@@ -6,16 +6,15 @@ using Ordering.Application.Contracts.Persistence;
 using Ordering.Application.Factories;
 using Ordering.Application.Models;
 using Ordering.Infrastructure.Factories;
-using Ordering.Infrastructure.Mailing;
-using Ordering.Infrastructure.Persistance;
+using Ordering.Infrastructure.Mail;
+using Ordering.Infrastructure.Persistence;
 using Ordering.Infrastructure.Repositories;
 
 namespace Ordering.Infrastructure;
 
 public static class InfrastructureServiceRegistration
 {
-    public static IServiceCollection AddInfrastructureServices(this IServiceCollection services,
-        IConfiguration configuration)
+    public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<OrderContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("OrderingConnectionString")));
@@ -24,7 +23,7 @@ public static class InfrastructureServiceRegistration
         services.AddScoped<IOrderRepository, OrderRepository>();
 
         services.AddScoped<IOrderFactory, OrderFactory>();
-        services.AddScoped<IOrderViewModelFactory, IOrderViewModelFactory>();
+        services.AddScoped<IOrderViewModelFactory, OrderViewModelFactory>();
 
         services.Configure<EmailSettings>(c =>
         {
@@ -37,7 +36,6 @@ public static class InfrastructureServiceRegistration
         });
         services.AddTransient<IEmailService, EmailService>();
 
-        
         return services;
     }
 }
