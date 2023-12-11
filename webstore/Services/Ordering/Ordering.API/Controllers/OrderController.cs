@@ -1,25 +1,20 @@
-using System.Runtime.CompilerServices;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Ordering.Application.Features.Orders.Command.CreateOrder;
-using Ordering.Application.Features.Orders.Queries.GetListOfOrdersQueries;
+using Ordering.Application.Features.Orders.Commands.CreateOrder;
+using Ordering.Application.Features.Orders.Queries.GetListOfOrders;
 using Ordering.Application.Features.Orders.Queries.ViewModels;
-using Ordering.Domain.Aggregates;
-using Ordering.Infrastructure.Repositories;
 
 namespace Ordering.API.Controllers;
 
 [ApiController]
 [Route("api/v1/[controller]")]
-
-public class OrderController: ControllerBase
+public class OrderController : ControllerBase
 {
     private readonly IMediator _mediator;
 
-
     public OrderController(IMediator mediator)
     {
-        _mediator = mediator;
+        _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
     }
 
     [HttpGet("{username}")]
@@ -33,7 +28,7 @@ public class OrderController: ControllerBase
 
     [HttpPost]
     [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
-    public async Task<ActionResult<int>> CreateOrder(CreateOrderCommand command)
+    public async Task<ActionResult<int>> CheckoutOrder(CreateOrderCommand command)
     {
         var result = await _mediator.Send(command);
         return Ok(result);
