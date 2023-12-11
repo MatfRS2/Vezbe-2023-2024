@@ -1,9 +1,8 @@
-using FluentValidation;
 using FluentValidation.Results;
 
 namespace Ordering.Application.Exceptions;
 
-public class ValidationFailedException: ApplicationException
+public class ValidationFailedException : ApplicationException
 {
     public IDictionary<string, string[]> Errors { get; }
 

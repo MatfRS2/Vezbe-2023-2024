@@ -1,11 +1,11 @@
 using Ordering.Application.Factories;
-using Ordering.Application.Features.Orders.Command.CreateOrder;
+using Ordering.Application.Features.Orders.Commands.CreateOrder;
 using Ordering.Domain.Aggregates;
 using Ordering.Domain.ValueObjects;
 
 namespace Ordering.Infrastructure.Factories;
 
-public class OrderFactory: IOrderFactory
+public class OrderFactory : IOrderFactory
 {
     public Order Create(CreateOrderCommand command)
     {
@@ -14,5 +14,6 @@ public class OrderFactory: IOrderFactory
         {
             order.AddOrderItem(item.ProductName, item.ProductId, item.PictureUrl, item.Price, item.Units);
         }
-        return order;    }
+        return order;
+    }
 }

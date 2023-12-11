@@ -2,11 +2,11 @@ using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using Ordering.Application.Contracts.Persistence;
 using Ordering.Domain.Common;
-using Ordering.Infrastructure.Persistance;
+using Ordering.Infrastructure.Persistence;
 
 namespace Ordering.Infrastructure.Repositories;
 
-public class RepositoryBase<T>: IAsyncRepository<T> where T: AggregateRoot
+public class RepositoryBase<T> : IAsyncRepository<T> where T : AggregateRoot
 {
     protected readonly OrderContext _dbContext;
 

@@ -1,9 +1,9 @@
 namespace Ordering.Domain.Common;
-
+// Implementation sourced from:
+// - https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/implement-value-objects
+// - https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs
 public abstract class ValueObject
 {
-    //ne identifikuju se po identitetu ali bi trebalo da se zna
-    //da se adrese porede po jednakosti
     protected static bool EqualOperator(ValueObject? left, ValueObject? right)
     {
         if (left is null ^ right is null)

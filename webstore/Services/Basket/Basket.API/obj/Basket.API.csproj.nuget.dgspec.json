@@ -4,14 +4,14 @@
     "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Basket/Basket.API/Basket.API.csproj": {}
   },
   "projects": {
-    "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Basket/Basket.API/Basket.API.csproj": {
+    "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Common/EventBus.Messages/EventBus.Messages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Basket/Basket.API/Basket.API.csproj",
-        "projectName": "Basket.API",
-        "projectPath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Basket/Basket.API/Basket.API.csproj",
+        "projectUniqueName": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Common/EventBus.Messages/EventBus.Messages.csproj",
+        "projectName": "EventBus.Messages",
+        "projectPath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Common/EventBus.Messages/EventBus.Messages.csproj",
         "packagesPath": "/home/dara/.nuget/packages/",
-        "outputPath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Basket/Basket.API/obj/",
+        "outputPath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Common/EventBus.Messages/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/dara/.nuget/NuGet/NuGet.Config"
@@ -37,7 +37,72 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Basket/Basket.API/Basket.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Basket/Basket.API/Basket.API.csproj",
+        "projectName": "Basket.API",
+        "projectPath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Basket/Basket.API/Basket.API.csproj",
+        "packagesPath": "/home/dara/.nuget/packages/",
+        "outputPath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Basket/Basket.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/dara/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Common/EventBus.Messages/EventBus.Messages.csproj": {
+                "projectPath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Common/EventBus.Messages/EventBus.Messages.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "CacheManager.StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.0.0-beta-1629, )"
+            },
             "Grpc": {
               "target": "Package",
               "version": "[2.46.6, )"
@@ -50,13 +115,21 @@
               "target": "Package",
               "version": "[2.46.6, )"
             },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.1.2, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.1.2, )"
+            },
             "Microsoft.Extensions.Caching.StackExchangeRedis": {
               "target": "Package",
               "version": "[8.0.0, )"
-            },
-            "MongoDB.Driver": {
-              "target": "Package",
-              "version": "[2.22.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -64,7 +137,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[6.4.0, )"
             }
           },
           "imports": [

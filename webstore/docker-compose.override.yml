@@ -1,30 +1,6 @@
 version: '3.4'
 
 services:
-  
-  discountdb: 
-    container_name: discountdb
-    restart: always
-    volumes:
-      - postgres_data:/var/lib/postgresql/data/
-    environment:
-      - POSTGRES_USER=admin
-      - POSTGRES_PASSWORD=admin1234
-      - POSTGRES_DB=DiscountDb
-    ports:
-      - "5432:5432"
-  
-  pgadmin:
-    container_name: pgadmin
-    restart: always
-    environment:
-      - PGADMIN_DEFAULT_EMAIL=razvoj.softvera.matf@gmail.com
-      - PGADMIN_DEFAULT_PASSWORD=admin1234
-    ports:
-      - "5050:80"
-    volumes:
-      - pgadmin_data:/root/.pgadmin
-  
   catalogdb:
     container_name: catalogdb
     restart: always
@@ -39,6 +15,36 @@ services:
     ports:
       - "6379:6379"
     
+  discountdb: 
+    container_name: discountdb
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin1234
+      - POSTGRES_DB=DiscountDb
+    ports:
+      - "5432:5432"
+  mssql:
+    container_name: mssql
+    restart: always
+    ports:
+      - "1433:1433"
+    environment:
+      - SA_PASSWORD=MATF12345678rs2
+      - ACCEPT_EULA=Y
+    volumes:
+      - mssql_data:/var/opt/mssql/data
+
+  rabbitmq:
+    container_name: rabbitmq
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  
+
   catalog.api:
     container_name: catalog.api
     environment:
@@ -47,17 +53,19 @@ services:
     depends_on: 
       - catalogdb
     ports:
-      - "8000:80"
+      - "8000:8080"
   
   basket.api:
     container_name: basket.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "CacheSettings:ConnectionString=basketdb:6379"
+      - "EventBusSettings:HostAddress=amqp://guest:guest@rabbitmq:5672"
     depends_on: 
       - basketdb
+      - rabbitmq
     ports:
-      - "8001:80"
+      - "8001:8080"
   
   
   discount.api:
@@ -68,25 +76,40 @@ services:
     depends_on:
       - discountdb
     ports:
-      - "8002:80"
+      - "8002:8080"
 
   discount.grpc:
     container_name: discount.grpc
     depends_on:
       - discountdb
     ports:
-      - "8003:80"
+      - "8003:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "DatabaseSettings:ConnectionString=Server=discountdb;Port=5432;Database=DiscountDb;User Id=admin;Password=admin1234;"
   
-  orderdb:
-    container_name: orderdb
+  pgadmin:
+    container_name: pgadmin
     restart: always
-    ports:
-      - "1433:1433"
     environment:
-      - SA_PASSWORD=MATF12345678rs2
-      - ACCEPT_EULA=Y
+      - PGADMIN_DEFAULT_EMAIL=razvoj.softvera.matf@gmail.com
+      - PGADMIN_DEFAULT_PASSWORD=admin1234
+    ports:
+      - "5050:8080"
     volumes:
-      - mssql_data:/var/opt/mssql/data
+      - pgadmin_data:/root/.pgadmin
+  
+  
+  ordering.api:
+    container_name: ordering.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:OrderingConnectionString=Server=mssql;Database=OrderDb;User Id=sa;Password=MATF12345678rs2;TrustServerCertificate=True;Encrypt=False;"
+      - "EventBusSettings:HostAddress=amqp://guest:guest@rabbitmq:5672"
+    depends_on:
+      - mssql
+      - rabbitmq
+    ports:
+      - "8004:8080"
+    
+  

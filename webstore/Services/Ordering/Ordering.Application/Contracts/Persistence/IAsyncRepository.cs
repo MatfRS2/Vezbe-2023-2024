@@ -3,7 +3,7 @@ using Ordering.Domain.Common;
 
 namespace Ordering.Application.Contracts.Persistence;
 
-public interface IAsyncRepository<T> where T: AggregateRoot
+public interface IAsyncRepository<T> where T : AggregateRoot
 {
     Task<IReadOnlyList<T>> GetAllAsync();
     Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate);

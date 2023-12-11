@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "3sNTun2W7QoRSsF9K4+9vubMJX6tg73ZTMJVGRwNIG/MooN+QFB2iJRJ0A7lbCvG/XTNnkTIGHHYfnpZTykXWQ==",
+  "dgSpecHash": "0rZnUE6qj2+Vfy8fsfpfM458BrNQwDNvNY+IRY5tP5QRFFCvxEggvUWbFzA9jSlecThSDi3WxPYqdULsMqS84Q==",
   "success": true,
   "projectFilePath": "/home/dara/Documents/GitHub/Vezbe-2023-2024/webstore/Services/Discount/Discount.GRPC/Discount.GRPC.csproj",
   "expectedPackageFiles": [
     "/home/dara/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/dara/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
-    "/home/dara/.nuget/packages/dapper/2.1.21/dapper.2.1.21.nupkg.sha512",
+    "/home/dara/.nuget/packages/dapper/2.1.24/dapper.2.1.24.nupkg.sha512",
     "/home/dara/.nuget/packages/google.protobuf/3.25.1/google.protobuf.3.25.1.nupkg.sha512",
     "/home/dara/.nuget/packages/grpc.aspnetcore/2.59.0/grpc.aspnetcore.2.59.0.nupkg.sha512",
     "/home/dara/.nuget/packages/grpc.aspnetcore.server/2.59.0/grpc.aspnetcore.server.2.59.0.nupkg.sha512",
@@ -25,10 +25,10 @@
     "/home/dara/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "/home/dara/.nuget/packages/microsoft.extensions.http/6.0.0/microsoft.extensions.http.6.0.0.nupkg.sha512",
     "/home/dara/.nuget/packages/microsoft.extensions.logging/6.0.0/microsoft.extensions.logging.6.0.0.nupkg.sha512",
-    "/home/dara/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "/home/dara/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "/home/dara/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
     "/home/dara/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "/home/dara/.nuget/packages/npgsql/7.0.6/npgsql.7.0.6.nupkg.sha512",
+    "/home/dara/.nuget/packages/npgsql/8.0.0/npgsql.8.0.0.nupkg.sha512",
     "/home/dara/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "/home/dara/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/home/dara/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
