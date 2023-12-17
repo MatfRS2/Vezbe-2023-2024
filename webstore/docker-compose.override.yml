@@ -18,14 +18,16 @@ services:
   discountdb:
     container_name: discountdb
     restart: always
-    volumes:
-      - postgres_data:/var/lib/postgresql/data/
     environment:
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=admin1234
       - POSTGRES_DB=DiscountDb
     ports:
       - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+  
+  
   mssql:
     container_name: mssql
     restart: always
@@ -95,7 +97,7 @@ services:
       - PGADMIN_DEFAULT_EMAIL=razvoj.softvera.matf@gmail.com
       - PGADMIN_DEFAULT_PASSWORD=admin1234
     ports:
-      - "5050:8080"
+      - "5050:80"
     volumes:
       - pgadmin_data:/root/.pgadmin
   
@@ -112,4 +114,12 @@ services:
     ports:
       - "8004:8080"
     
-  
+  identityserver:
+    container_name: identityserver
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:IdentityConnectionString=Server=mssql;Database=IdentityDb;User Id=sa;Password=MATF12345678rs2;TrustServerCertificate=True;Encrypt=False;"
+    depends_on: 
+      - mssql
+    ports:
+      - "4000:8080"

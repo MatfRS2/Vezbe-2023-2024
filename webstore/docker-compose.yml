@@ -1,5 +1,8 @@
 ﻿services:
   
+  rabbitmq:
+    image: rabbitmq:management-alpine
+  
   discountdb:
     image: postgres
   
@@ -45,11 +48,16 @@
       context: .
       dockerfile: Services/Ordering/Ordering.API/Dockerfile
   
-  rabbitmq:
-    image: rabbitmq:management-alpine
+  
+  identityserver:
+    image: identityserver
+    build:
+      context: .
+      dockerfile: Security/IdentityServer/Dockerfile
 
 volumes:
   mongo_data:
   postgres_data:
   pgadmin_data:
   mssql_data:
+
