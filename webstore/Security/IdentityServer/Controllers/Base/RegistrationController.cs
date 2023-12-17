@@ -6,21 +6,21 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace IdentityServer.Controllers.Base;
 
-public class RegistrationControllerBase: ControllerBase
+public class RegistrationControllerBase : ControllerBase
 {
-    private readonly IMapper _mapper;
-    private readonly ILogger<AuthenticationController> _logger;
-    private readonly UserManager<User> _userManager;
-    private readonly RoleManager<IdentityRole> _roleManager;
+    protected readonly ILogger<AuthenticationController> _logger;
+    protected readonly IMapper _mapper;
+    protected readonly UserManager<User> _userManager;
+    protected readonly RoleManager<IdentityRole> _roleManager;
 
-    public RegistrationControllerBase(IMapper mapper, ILogger<AuthenticationController> logger,
-        UserManager<User> userManager, RoleManager<IdentityRole> roleManager)
+    public RegistrationControllerBase(ILogger<AuthenticationController> logger, IMapper mapper, UserManager<User> userManager, RoleManager<IdentityRole> roleManager)
     {
-        _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         _userManager = userManager ?? throw new ArgumentNullException(nameof(userManager));
         _roleManager = roleManager ?? throw new ArgumentNullException(nameof(roleManager));
     }
+
     protected async Task<IActionResult> RegisterNewUserWithRoles(NewUserDto newUser, IEnumerable<string> roles)
     {
         var user = _mapper.Map<User>(newUser);
