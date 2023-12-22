@@ -5,10 +5,19 @@
       <map>
         <entry key="Common:buildConfiguration" value="Debug" />
         <entry key="Common:d3d6eb1c-8c3f-4a48-ba8f-67d1ee02382c:dbContext" value="IdentityServer.Data.ApplicationContext" />
+        <entry key="Common:dbContextFolder" value="Context" />
+        <entry key="Common:dbContextName" value="Context" />
         <entry key="Common:enableDiagnosticLogging" value="false" />
+        <entry key="Common:generateOnConfiguring" value="true" />
         <entry key="Common:noBuild" value="false" />
         <entry key="Common:outputFolder" value="Migrations" />
+        <entry key="Common:provider" value="Microsoft.EntityFrameworkCore.SqlServer" />
+        <entry key="Common:schemas" value="" />
+        <entry key="Common:tables" value="" />
+        <entry key="Common:useAttributes" value="false" />
+        <entry key="Common:useDatabaseNames" value="false" />
         <entry key="Common:useDefaultConnection" value="true" />
+        <entry key="Common:usePluralizer" value="true" />
       </map>
     </option>
   </component>
