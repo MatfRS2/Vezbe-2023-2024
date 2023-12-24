@@ -89,6 +89,8 @@ fabric.properties
 *.user
 *.userosscache
 *.sln.docstates
+bin
+obj
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -179,6 +181,7 @@ StyleCopReport.xml
 *.scc
 **/bin/
 **/obj/
+
 # Chutzpah Test files
 _Chutzpah*
 
